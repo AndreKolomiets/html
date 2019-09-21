@@ -45,6 +45,7 @@ font-weight: bold;
 #container,#page {
     display: flex;
     flex-wrap: wrap;
+    align-items: end;
 }
 #page .product {
     max-width: 235px;
@@ -67,6 +68,18 @@ font-weight: bold;
 }
 #sidebar {
     width: 25%;
+    border: 1px solid #ccc;
+    padding: 15px;
+
+}
+
+#sidebar ul li a {
+display: block;
+padding: 10px 15px;
+border: 1px solid #ccc;
+margin: 5 px;
+text-decoration: none;
+color: black; 
 }
 
 #page .product button {
@@ -82,6 +95,19 @@ font-weight: bold;
 
 #page .product button:hover {
  background:#65bd24;
+} 
 
+
+
+
+
+@media(max-width:px){
+    #sidebar, #page {
+        width: 100%;
+    }
+#page {
+    justify-content: center;
+    margin-top: 15px; 
+}
 
 }
